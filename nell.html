@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NELL</title>
+        <meta charset="utf-8"/>
+        <style>
+            /* css 작성하는 곳*/
+            header{
+                background-color: black;
+                color: white;
+                padding: 10px 20px; /*상하 좌우*/
+            }
+            header>h1{
+                margin: 0px;
+            }
+            body{
+                margin: 0px;
+                background-color: rgb(223, 223, 223);
+            }
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: #cfc91d;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            .clear{
+            clear: both; /* 지우다: 양쪽*/
+            height: 0px; /* 높이: 0px */
+            overflow: hidden; /* 넘쳤을 때: 숨김 */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            .float_right li{
+                color:white;
+                border: 0;
+            }
+            header ul{
+                margin: 12px 0px;
+            }
+            #main_visual{
+                background-image: url("images/colors.jpg");
+                height: 400px;
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y*/
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color:white; /*상속*/
+                text-align: center;
+                padding: 100px 0px; /*상하 좌우 */
+            }
+            #main_visual h2{
+                letter-spacing: 10px;
+                font-size: 35px;
+                margin: 8px 0px; /*상하 좌우*/
+            }
+            #main_visual img{
+                margin-top: 120px;
+            }
+            #title_top{
+                font-size: 20px;
+                color: rgb(190, 190, 190);
+                padding: 30px 0px;
+            }
+            #title_bottom{
+                font-size: 15px;
+            }
+            section{
+                text-align: center;
+            }
+            section h3{
+                color: black;
+                font-size: 25px;
+                font-weight: normal;
+                margin: 50px 0px; /*상하 좌우*/
+            }
+            section p{
+                margin:50px 50px;
+            }
+       
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            section dd{
+                margin:0px;
+            }
+            .nell{
+                float:left;
+            }
+            .nelltext{
+                float:left;
+                width: 300px;
+                margin-left:70px;
+                text-align:left;
+            }
+            .nelltext p{
+                margin:0px;
+            }
+        
+            section>#about_list>li{
+                float:left;
+                width: 200px; /*고정값*/
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style:none;
+                border-right: solid 1px gray;
+                padding: 20px;
+            }
+            footer{
+            background-color: rgb(134, 134, 134);
+            color: #ccc;
+
+            padding: 10px 50px;
+        }
+        footer>div>ul>li{
+            float:left;
+            list-style: none;
+            padding: 0px 10px; /*상하 좌우*/
+            border-right: solid 2px gray;
+        }
+        footer>div>ul>li:nth-child(6){
+            border: none;
+        }
+        footer>div>ul{
+            padding:0px;
+        }
+        footer>ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 10px; /* 상하 좌우 */
+        }
+        footer>ul{
+            padding: 0px;
+        }
+        #footer_left{
+            float: left;
+        }
+        #footer_right{
+            float: right;
+        }
+            
+            .nellbox{
+                width:1000px;
+                margin:0 auto;
+            }
+            #work_list img{
+                width: 100% /*있을 수 있는 공간 100% 기준*/
+                display: inline; /* 원래 이미지의 출력 방식*/
+                display: block; /*블록형으로 변경*/
+            }
+            #work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            
+            
+            .nell01{
+                    width:900px;
+                    margin:0 auto;
+                }
+                #artist .text {
+                    float:left;
+                    width:200px;
+                    margin-left:60px;
+                }
+                .nell01 img{
+                    float:left;
+                }
+            section>h3>b{
+            list-style: none;
+            padding: 0px 10px; /*상하 좌우*/
+            border-right: solid 1px gray;
+            border-left: solid 1px gray;
+        }
+      
+    
+        #about_list img{
+            width:150px;
+            height:150px;
+           
+        }
+        
+        </style>
+        
+    </head>
+    
+      <body>     
+  
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <!--div span-->
+                    <span>NELL</span>
+                </h1>
+                <nav class="float_right">
+                <ul>
+                    <li><a href="indexx.html">INDEX</a></li>
+                    <li><a href="layout1.html">LAYOUT1</a></li>
+                    <li><a href="layout2.html">LAYOUT2</a></li>
+                    <li><a href="layout3.html">LAYOUT3</a> </li>
+                    <li><a href="review.html">REVIEW</a> </li>
+                   
+                    <div class="clear"></div>
+                </ul>
+                </nav>
+                <div class="clear">
+                </div>
+            </header>
+            <div id="main_visual">
+                <div id="title_top"> <h2>NELL 8th Album</h2></div>
+            </div> 
+            <section id="artist">
+                <h3><b>ARTIST</b></h3>
+                <div class="nell01">
+                    <img src="images/frofile.jpg"/>
+                    <div class="text">
+                        <b>넬(NELL)</b>
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <dl>
+                                <dd>김종완(보컬),이재경(기타),이정훈(베이스),정재원(드럼)</dd>
+                                <div><b>소속사</b></dd>
+                                <dd>스페이스보헤미안</dd>
+                                <dd><b>데뷔</b></dd>
+                                <dd>2001년 1집 앨범 [Reflection of]</dd>
+                                <dd><b>수상</b></dd>
+                                <dd>2015년 제11회 골든티켓어워즈 최고의 라이브밴드상
+                                    2012년 제4회 멜론뮤직어워드 뮤직스타일상 락부문</dd>
+                                <dd><b>사이트</b></dd>
+                                <dd>공식홈페이지, 블로그, 인스타그램, 트위터, 페이스북, 유튜브, V LIVE</dd>
+
+                            </dl>
+
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            <section>
+                    <h3><b>ALBUM</b></h3>
+                    <div id="content">
+                    <img src="images/1.jpg"/>
+                    <img src="images/2.png"/>
+                    <img src="images/3.jpg"/>
+                    <img src="images/4.jpg"/>
+                   
+                </div>
+                <br />
+                <br />
+            </section>
+            <style>
+                .content_part dt{
+                    font-size: 21px;
+                }
+                .hover_cont{
+                    font-size:22px;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    color:black;
+                    opacity:0%;
+                    width:360px;
+                    padding:170px 0px;
+                }
+                .hover_cont:hover{
+                    color:white;
+                    opacity:100%;
+                    z-index:1;
+                }
+                .hover_wrapper{
+                    position:relative;
+                    margin:0;
+                    width:360px;
+                    
+                }
+                .hover_wrapper:hover{
+                    opacity:30%;
+                }
+                #baner img {
+                    max-width: 100%;
+                }
+
+               
+            </style>
+        
+                
+                            
+            </section>
+            <br />
+            <br />
+            <br />
+            <br />
+                <section>
+                    
+                        <h3><b>MY PICK</b></h3>
+                        <ul id="about_list">
+                            <li>
+                                <img src="images/기억.jpg"/>
+                                <dl>
+                                    <dt><b>기억을 걷는 시간</b></dt>
+                                    <dd>
+                                            수록앨범
+                                             Separation Anxiety(2008.03.21.)
+                                    </dd>
+                                    <dd>
+                                        ★★★★★
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <img src="images/백야.jpg"/>
+                                <dl>
+                                    <dt><b>백야</b></dt>
+                                    <dd>
+                                            
+                                            Holding Onto Gravity(2012.12.03)
+                                    </dd>
+                                    <dd>
+                                            ★★★★☆
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <img src="images/지구.jpg"/>
+                                <dl>
+                                    <dt><b>지구가 태양을 네번</b></dt>
+                                    <dd>
+                                           Newton's Apple(2014.02.27)
+                                    </dd>
+                                    <dd>
+                                            ★★★★★
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <img src="images/스테이.jpg"/>
+                                <dl>
+                                    <dt><b>Stay</b></dt>
+                                    <dd>
+                                            Let It Rain(2003.06.12)
+                                    </dd>
+                                    <dd>
+                                            ★★★★☆
+                                    </dd>
+                                </dl>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </section> 
+                    
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                            <div>
+
+                                <section>
+                                
+                                   <h3><b>CONCERT</b></h3>
+                                    <div class="content_part">
+                                        <!-- 왼편 부분 -->
+                                        <img src="images/ddddd.gif">
+                                        <dl>
+                                            <dt><b>‘CHRISTMAS IN NELL’S ROOM’</b></dt>
+                                            <br />
+                                        
+                                            <dd> 벌써 11회째를 맞이한 넬의 대표 브랜드 콘서트 </dd>
+                                            <dd> ‘CHRISTMAS IN NELL’S ROOM’은 매년 12월 24일 </dd>
+                                            <dd> 단 하루만 공연을 했던 예전과는 달리 올해는 3일 동안</dd>
+                                            <dd>풍성한 공연을 펼치며, 더욱 많은 관객들과 함께 호흡했다.</dd>
+
+                                
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <br />
+                                    <br /> <br />
+                                    <br />
+                                    <div class="content_part">
+                                            <!-- 오른쪽 부분 -->
+                                            <img src="images/3.gif">
+                                            <dl>
+                                                <dt><b>'NELL CLUB CONCERT 2019'</b></dt>
+                                                <br />
+                                                
+                                                <dd>밴드 넬이 오는 8월 9일을 시작으로 4주간 장기 클럽 공연</dd>
+                                                <dd>'NELL CLUB CONCERT 2019'(2019 넬 클럽 콘서트)를 개최하고</dd>
+                                                 <dd> 팬들과 만난다"라고 밝혔다.</dd>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+            
+                <section>
+                    <div>
+                    <div id="baner">
+                    <img src="images/넬.jpg"/>
+                    </div>
+              
+                </section>
+               
+            </section>
+            <footer>
+                    <div id="footer_left">
+                        <ul>
+                            <li>INDEX</li>
+                            <li>LAYOUT1</li>
+                            <li>LAYOUT2</li>
+                            <li>LAYOUT3</li>
+                            <li>MY LAYOUT</li>
+                            <li>REVIEW</li>
+                            <div class="clear"></div><!--float left 해제-->
+                        </ul>
+                        <div>ⓒ 2019 jung ye eun All Right Reserved.</div>
+                        <div>the loges in the design are the property of their respective owners/copyright holders.</div>
+                    </div>
+                    <ul id="footer_right"><!--오른편 상자 역할-->
+                        <li><img src="images/layout1_footer_icon1.png"/></li>
+                        <li><img src="images/layout1_footer_icon2.png"/></li>
+                        <li><img src="images/layout1_footer_icon3.png"/></li>
+                        <li><img src="images/layout1_footer_icon4.png"/></li>
+                        <li><img src="images/layout1_footer_icon5.png"/></li>
+                        <li><img src="images/layout1_footer_icon6.png"/></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="clear"></div>
+                </footer>
+            </div>
+        </dIV>
+        </body>
+</html>

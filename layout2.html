@@ -121,6 +121,38 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            footer{
+                     background-color: rgb(134, 134, 134);
+                      color: #ccc;
+
+                    padding: 10px 50px;
+                    }
+                     footer>div>ul>li{
+                         float:left;
+                         list-style: none;
+                         padding: 0px 10px; /*상하 좌우*/
+                         border-right: solid 2px gray;
+                     }
+                    footer>div>ul>li:nth-child(6){
+                         border: none;
+                    }
+                    footer>div>ul{
+                         padding:0px;
+                    }
+                    footer>ul>li{
+                        float: left;
+                        list-style: none;
+                        padding: 0px 10px; /* 상하 좌우 */
+                    }
+                    footer>ul{
+                        padding: 0px;
+                    }
+                    #footer_left{
+                         float: left;
+                    }
+                    #footer_right{
+                        float: right;
+                    }
         </style>
     </head>
     <body>
@@ -231,5 +263,32 @@
                     <div class="clear"></div>
                 </ul>
             </section>
+            <footer>
+                <div id="footer_left">
+                    <ul>
+                        <li>INDEX</li>
+                        <li>LAYOUT1</li>
+                        <li>LAYOUT2</li>
+                        <li>LAYOUT3</li>
+                        <li>MY LAYOUT</li>
+                        <li>REVIEW</li>
+                        <div class="clear"></div><!--float left 해제-->
+                    </ul>
+                    <div>ⓒ 2019 jung ye eun All Right Reserved.</div>
+                    <div>the loges in the design are the property of their respective owners/copyright holders.</div>
+                </div>
+                <ul id="footer_right"><!--오른편 상자 역할-->
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
+        </div>
+    </dIV>
     </body>
 </html>
